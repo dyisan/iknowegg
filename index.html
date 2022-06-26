@@ -1,68 +1,86 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>CSS3iknowegg</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: url('https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg') no-repeat;
+      background-size: 100% 130%;
+    }
 
-<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style.css">
+    #login_box {
+      width: 20%;
+      height: 400px;
+      background-color: #00000060;
+      margin: auto;
+      margin-top: 10%;
+      text-align: center;
+      border-radius: 10px;
+      padding: 50px 50px;
+    }
 
+    h2 {
+      color: #ffffff90;
+      margin-top: 5%;
+    }
+
+    #input-box {
+      margin-top: 5%;
+    }
+
+    span {
+      color: #fff;
+    }
+
+    input {
+      border: 0;
+      width: 60%;
+      font-size: 15px;
+      color: #fff;
+      background: transparent;
+      border-bottom: 2px solid #fff;
+      padding: 5px 10px;
+      outline: none;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 50px;
+      width: 60%;
+      height: 30px;
+      border-radius: 10px;
+      border: 0;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      font-size: 15px;
+      background-image: linear-gradient(to right, #30cfd0, #330867);
+    }
+
+    #sign_up {
+      margin-top: 45%;
+      margin-left: 60%;
+    }
+
+    a {
+      color: #b94648;
+    }
+  </style>
 </head>
+
 <body>
-
-<div class="materialContainer">
-	<div class="box">
-		<div class="title">登录</div>
-		<div class="input">
-			<label for="name">用户名</label>
-			<input type="text" name="name" id="name">
-			<span class="spin"></span>
-		</div>
-		<div class="input">
-			<label for="pass">密码</label>
-			<input type="password" name="pass" id="pass">
-			<span class="spin"></span>
-		</div>
-		<div class="button login">
-			<button>
-				<span>登录</span>
-				<i class="fa fa-check"></i>
-			</button>
-		</div>
-		<a href="javascript:" class="pass-forgot">忘记密码？</a>
-	</div>
-
-	<div class="overbox">
-		<div class="material-button alt-2">
-			<span class="shape"></span>
-		</div>
-		<div class="title">注册</div>
-		<div class="input">
-			<label for="regname">用户名</label>
-			<input type="text" name="regname" id="regname">
-			<span class="spin"></span>
-		</div>
-		<div class="input">
-			<label for="regpass">密码</label>
-			<input type="password" name="regpass" id="regpass">
-			<span class="spin"></span>
-		</div>
-		<div class="input">
-			<label for="reregpass">确认密码</label>
-			<input type="password" name="reregpass" id="reregpass">
-			<span class="spin"></span>
-		</div>
-		<div class="button">
-			<button>
-				<span>注册</span>
-			</button>
-		</div>
-	</div>
-
-</div>
-
-<script src="js/jquery.min.js"></script>
-<script src="js/index.js"></script>
-
+  <div id="login_box">
+    <h2>LOGIN</h2>
+    <div id="input_box">
+      <input type="text" placeholder="请输入用户名">
+    </div>
+    <div class="input_box">
+      <input type="password" placeholder="请输入密码">
+    </div>
+    <button>登录</button><br>
+  </div>
 </body>
 </html>
